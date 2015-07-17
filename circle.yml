@@ -2,7 +2,7 @@ test:
   override:
     - go test -v ./...
     - echo $CIRCLE_ARTIFACTS
-    - ls $CIRCLE_ARTIFACTS
+    - touch $CIRCLE_ARTIFACTS/foo.txt
 
 deployment:
   production:

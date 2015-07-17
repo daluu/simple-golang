@@ -3,3 +3,10 @@ test:
     - go test -v ./...
     - echo $CIRCLE_ARTIFACTS
     - ls $CIRCLE_ARTIFACTS
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - echo $CIRCLE_ARTIFACTS
+      - ls $CIRCLE_ARTIFACTS

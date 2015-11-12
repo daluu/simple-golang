@@ -1,5 +1,6 @@
 test:
   override:
+    - go list ./...
     - go test -v ./...
 
 

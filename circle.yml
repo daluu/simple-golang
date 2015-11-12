@@ -1,6 +1,6 @@
-machine:
-  environment:
-    GOBIN: /home/ubuntu/.go_workspace/bin
+#machine:
+  #environment:
+    #GOBIN: /home/ubuntu/.go_workspace/bin
 test:
   override:
     - go list ./...

@@ -1,7 +1,8 @@
+machine:
+  environment:
+    GOBIN: /home/ubuntu/.go_workspace/bin
 test:
   override:
     - go list ./...
+    - chmod +x go_list.sh; ./go_list.sh
     - go test -v ./...
-
-
-

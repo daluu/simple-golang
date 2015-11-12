@@ -1,6 +1,6 @@
 package lib
 
-import "github.com/drewwells/simple-golang/dep"
+import "github.com/kimh/simple-golang/dep"
 
 func String() string {
 	return "Hello World!"

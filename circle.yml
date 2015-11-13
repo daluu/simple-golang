@@ -3,6 +3,7 @@
     #GOBIN: /home/ubuntu/.go_workspace/bin
 test:
   override:
+    - echo "go path is $GOPATH"
     - go list ./...
     - chmod +x go_list.sh; ./go_list.sh
     - go test -v ./...
